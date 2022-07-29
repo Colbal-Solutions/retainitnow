@@ -143,3 +143,91 @@ currencySymbol = "$"
 
 ***************************************************************************
 
+extra foot menu items, add to config.toml
+
+  [[menu.footer]]
+  name = "Products"
+  URL = "products/"
+  weight = 10
+
+  [[menu.footer]]
+  name = "Blog"
+  URL = "blog/"
+  weight = 20
+
+  [[menu.footer]]
+  name = "FAQ"
+  URL = "faq/"
+  weight = 30
+
+*****************************************************************************
+
+add nav bar to site, add to config.toml after the front matter
+
+############################## navigation ###############################
+[menu]
+
+  [[menu.main]]
+  name = "Products"
+  URL = "products/"
+  weight = 1
+
+  [[menu.main]]
+  name = "Blog"
+  URL = "blog/"
+  weight = 2
+
+  [[menu.main]]
+  name = "FAQ"
+  URL = "faq/"
+  weight = 3
+
+  [[menu.main]]
+  name = "Contact"
+  URL = "contact/"
+  weight = 4
+
+**********************************************************
+
+add socials to footer, add to config.toml
+
+  # Social Site
+  [[params.social]]
+  icon = "ti-facebook"
+  link = "#"
+
+  [[params.social]]
+  icon = "ti-twitter-alt"
+  link = "#"
+
+  [[params.social]]
+  icon = "ti-youtube"
+  link = "#"
+
+  [[params.social]]
+  icon = "ti-instagram"
+  link = "#"
+
+  [[params.social]]
+  icon = "ti-pinterest"
+  link = "#"
+
+************************************************************
+
+  # Contact Form
+  [params.contact]
+  formAction = "#" # contact form works with formspree.io
+
+**************************************************************
+
+# Preloader
+  [params.preloader]
+  enable = true
+  preloader = "" # use .png , .svg or .gif format
+
+  # Product Rating
+  # it works with https://rating-widget.com/ , you will get the ID and publicKey after creating your account there.
+  [params.rating]
+  enable = true
+  websiteID = "444334"
+  publicKey = "811cf0927332bf51f2e12f84608594ac"
